@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "@teamgosh/bee-sdk": "^3.1.0",
-    "@tvmsdk/core": "^3.0.4",
-    "@tvmsdk/lib-web": "^3.0.4",
+    "@tvmsdk/core": "^2.2.0",
+    "@tvmsdk/lib-web": "^2.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
