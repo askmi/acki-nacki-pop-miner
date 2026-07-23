@@ -1,0 +1,27 @@
+{
+  "name": "acki-nacki-pop-miner",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Reference Proof-of-Participation mobile/web mining app on the Acki Nacki blockchain using Bee Engine SDK + TVM SDK.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@teamgosh/bee-sdk": "^3.1.0",
+    "@tvmsdk/core": "^3.0.4",
+    "@tvmsdk/lib-web": "^3.0.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2"
+  }
+}

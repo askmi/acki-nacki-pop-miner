@@ -1,0 +1,47 @@
+{
+  "ABI version": 2,
+  "header": ["time", "expire"],
+  "functions": [
+    {
+      "name": "submitSession",
+      "inputs": [
+        { "name": "miner", "type": "address" },
+        { "name": "day", "type": "string" },
+        { "name": "streakDays", "type": "uint256" },
+        { "name": "boostX100", "type": "uint256" },
+        { "name": "weight", "type": "uint256" }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "getMinerStats",
+      "inputs": [{ "name": "miner", "type": "address" }],
+      "outputs": [
+        { "name": "streakDays", "type": "uint256" },
+        { "name": "totalWeight", "type": "uint256" },
+        { "name": "lastDay", "type": "string" }
+      ]
+    },
+    {
+      "name": "getDayWeight",
+      "inputs": [
+        { "name": "miner", "type": "address" },
+        { "name": "day", "type": "string" }
+      ],
+      "outputs": [{ "name": "weight", "type": "uint256" }]
+    }
+  ],
+  "events": [
+    {
+      "name": "SessionSubmitted",
+      "inputs": [
+        { "name": "miner", "type": "address" },
+        { "name": "day", "type": "string" },
+        { "name": "streakDays", "type": "uint256" },
+        { "name": "boostX100", "type": "uint256" },
+        { "name": "weight", "type": "uint256" }
+      ]
+    }
+  ],
+  "data": []
+}
